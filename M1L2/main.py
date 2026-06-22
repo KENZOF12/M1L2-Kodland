@@ -37,4 +37,29 @@ async def add(ctx, left: int, right: int):
     """Adds two numbers together."""
     await ctx.send(left + right)
 
+@bot.command()
+async def meme1(ctx):
+    with open('images/mem1.jpg', 'rb') as f:
+        #Vamos armazenar o arquivo convertido da biblioteca do Discord nesta variável!
+        picture = discord.File(f)
+    # Podemos então enviar esse arquivo como um parâmetro
+    await ctx.send(file=picture)
+
+@bot.command()
+async def meme2(ctx):
+    with open('images/mem2.jpg', 'rb') as f:
+        #Vamos armazenar o arquivo convertido da biblioteca do Discord nesta variável!
+        picture = discord.File(f)
+    # Podemos então enviar esse arquivo como um parâmetro
+    await ctx.send(file=picture)
+
+@bot.command()
+async def meme3(ctx):
+    with open('images/mem3.jpg', 'rb') as f:
+        #Vamos armazenar o arquivo convertido da biblioteca do Discord nesta variável!
+        picture = discord.File(f)
+    # Podemos então enviar esse arquivo como um parâmetro
+    await ctx.send(file=picture)
+
+
 bot.run('')
